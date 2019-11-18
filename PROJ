@@ -34,11 +34,47 @@ create table STUDENT_INTERNS_COMPANY(
 	Salary INT(5),
 	CONSTRAINT student_interns_company_snum_pk PRIMARY KEY(Snum),
 	CONSTRAINT student_interns_company_cname_pk PRIMARY KEY(Cname)
-)
+);
 create table TASK(
 	TaskId VARCHAR(3) NOT NULL,
 	Dateass DATE,
 	Datefin DATE,
 	Difficulty INT(2),
-	Duration INT 
-)
+	Duration INT(2),
+	DesignSpecs VARCHAR(64) NOT NULL,
+	DataInputType VARCHAR(12),
+	DataOutputType VARCHAR(12),
+	IsFrontEnd VARBINARY,
+	IsBackend VARBINARY,
+	Pid VARCHAR(10) NOT NULL,
+	Snum VARCHAR(10) NOT NULL,
+	CONSTRAINT task_taskid_pk PRIMARY KEY(TaskId),
+	CONSTRAINT task_pid_fk FOREIGN KEY(Pid) REFERENCES branch PROJECT(Pid), 
+	CONSTRAINT task_snum_fk FOREIGN KEY(Snum) REFERENCES branch STUDENT(Snum)
+);
+create table COMPANY(
+	Cname VARCHAR(32) NOT NULL,
+	Cloc VARCHAR(64) NOT NULL,
+	GovDep VARCHAR(8),
+	Usec VARCHAR(32),
+	Ceo VARCHAR(32),
+	Product VARCHAR(16),
+	CONSTRAINT company_cname_pk PRIMARY KEY(Cname)
+);
+create table COMPANY_RECEIVES_PROJECT(
+	Pid VARCHAR(10) NOT NULL,
+	Cname VARCHAR(32) NOT NULL,
+	StartDate DATE,
+	EndDate DATE,
+	CONSTRAINT company_receives_project_pid_pk PRIMARY KEY(Pid),
+	CONSTRAINT company_receives_project_cname_pk PRIMARY KEY(Cname)	
+);
+create table PROJECT(
+	Pid VARCHAR(10) NOT NULL,
+	Goal VARCHAR(64),
+	Pdesc VARCHAR(64),
+	Pcodename VARCHAR(16),
+	Cname VARCHAR(32) NOT NULL,
+	CONSTRAINT project_pid_pk PRIMARY KEY(Pid),
+	CONSTRAINT project_cname_fk FOREIGN KEY(Cname) REFERENCES branch COMPANY(Cname)
+);
