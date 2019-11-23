@@ -42,6 +42,7 @@ create table ADVISER_SPECIALTIES(
 	empNo VARCHAR(10) NOT NULL,
 	aname VARCHAR(32) NOT NULL,
 	pid VARCHAR(10) NOT NULL,
+	specialty VARCHAR(40) NOT NULL,
 	CONSTRAINT adviser_specialties_pid_fk FOREIGN KEY(pid) REFERENCES PROJECT(pid)
 );
 
