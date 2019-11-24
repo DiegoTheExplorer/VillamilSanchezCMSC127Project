@@ -1,9 +1,9 @@
-create database project;
+create database project CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 use project;
 create table COMPANY(
 	cname VARCHAR(32) NOT NULL,
 	cloc VARCHAR(64) NOT NULL,
-	govDep VARCHAR(8),
+	govDep VARCHAR(60),
 	usec VARCHAR(32),
 	ceo VARCHAR(32),
 	product VARCHAR(16),
@@ -87,4 +87,12 @@ create table STUDENT_INTERNS_COMPANY(
 	salary INT(5),
 	CONSTRAINT student_interns_company_snum_pk FOREIGN KEY(snum) REFERENCES STUDENT(snum),
 	CONSTRAINT student_interns_company_cname_pk FOREIGN KEY(cname) REFERENCES COMPANY(cname)
+);
+
+create table STUDENT_ASSIGNED_TASK (
+	snum VARCHAR(5) NOT NULL,
+	taskid VARCHAR(12) NOT NULL,
+	CONSTRAINT student_assigned_task_snum_pk FOREIGN KEY(snum) REFERENCES STUDENT(snum),
+	CONSTRAINT student_assigned_task_taskid_pk FOREIGN KEY(taskid) REFERENCES TASK(taskid)
+
 );
