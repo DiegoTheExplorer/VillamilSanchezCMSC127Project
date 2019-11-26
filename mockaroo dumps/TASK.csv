@@ -1,0 +1,101 @@
+taskid,dateass,datefin,difficulty,duration,designspecs,datainputtype,dataoutputtype,isfrontend,isbackend,pid,snum
+1,11/30/2017,3/11/2019,8,466.0050925926,"Sauce - Apple, Unsweetened",Fuscia,Red,false,true,72,69
+2,8/22/2018,5/13/2019,8,264.2814236111,Green Scrubbie Pad H.duty,Fuscia,Maroon,,,29,19
+3,4/21/2018,10/5/2019,8,531.5216203704,Worcestershire Sauce,Green,Maroon,false,true,76,76
+4,2/19/2018,4/28/2019,2,433.5692361111,Raspberries - Fresh,Pink,Turquoise,,,12,43
+5,6/18/2018,3/26/2019,10,280.9628935185,Soup Knorr Chili With Beans,Yellow,Goldenrod,true,true,11,40
+6,11/5/2018,1/12/2019,8,68.8388657407,Chicken - Bones,Puce,Goldenrod,true,true,61,38
+7,6/20/2018,11/18/2019,9,516.18125,Chicken - Whole,Green,Teal,,,13,92
+8,1/27/2018,6/5/2019,9,493.9467476852,Appetizer - Assorted Box,Crimson,Pink,false,false,14,91
+9,8/30/2018,2/1/2019,4,155.8051157407,"Water - Mineral, Natural",Fuscia,Yellow,,,47,93
+10,6/10/2018,10/14/2019,2,490.0431712963,Star Fruit,Crimson,Green,false,true,19,39
+11,6/19/2018,6/14/2019,1,360.1952662037,"Fish - Soup Base, Bouillon",Aquamarine,Crimson,false,false,67,31
+12,12/30/2017,12/7/2018,2,341.561400463,Towel - Roll White,Teal,Teal,true,false,40,48
+13,6/16/2018,12/6/2018,5,173.3540277778,Lobster - Tail 6 Oz,Maroon,Khaki,true,true,75,98
+14,9/29/2018,6/10/2019,2,253.4911574074,Tuna - Bluefin,Teal,Fuscia,true,true,17,28
+15,5/7/2018,9/15/2019,9,495.2015162037,Wasabi Paste,Mauv,Violet,,,82,42
+16,7/25/2018,5/3/2019,6,282.0151736111,Everfresh Products,Mauv,Orange,false,false,71,4
+17,8/22/2018,9/11/2019,2,384.9052777778,Beer - Mill St Organic,Teal,Maroon,,,96,99
+18,6/2/2018,3/6/2019,10,276.8953935185,Tea - Vanilla Chai,Puce,Fuscia,true,true,94,10
+19,12/25/2017,6/16/2019,8,537.2005902778,Pears - Bartlett,Green,Blue,true,false,69,19
+20,3/30/2018,4/27/2019,10,392.7921296296,"Tart Shells - Savory, 2",Green,Violet,,,73,61
+21,7/26/2018,4/10/2019,5,258.2427314815,Shrimp - Black Tiger 6 - 8,Yellow,Green,true,true,45,66
+22,9/25/2018,3/8/2019,7,163.3981134259,Cheese - Mascarpone,Maroon,Goldenrod,,,36,63
+23,1/7/2018,7/29/2019,8,567.4805439815,Juice - Orange 1.89l,Crimson,Mauv,true,false,47,95
+24,5/13/2018,6/27/2019,9,410.1688310185,Lid Coffeecup 12oz D9542b,Aquamarine,Turquoise,true,false,19,40
+25,8/19/2018,6/26/2019,4,310.8405324074,V8 Pet,Turquoise,Red,true,true,36,38
+26,6/12/2018,4/22/2019,8,314.2337268519,Gloves - Goldtouch Disposable,Teal,Red,true,true,47,21
+27,5/17/2018,11/16/2019,10,548.3002893519,"Pasta - Lasagna Noodle, Frozen",Yellow,Mauv,,,58,11
+28,6/2/2018,6/28/2019,9,390.9173726852,Honey - Lavender,Blue,Maroon,true,true,52,42
+29,7/6/2018,8/26/2019,4,415.68125,Arrowroot,Maroon,Pink,,,10,11
+30,4/30/2018,6/11/2019,2,406.7291319444,"Beef - Bones, Cut - Up",Goldenrod,Blue,true,false,61,89
+31,1/10/2018,2/23/2019,2,409.2176851852,"Cheese - Brie,danish",Violet,Indigo,,,84,22
+32,1/4/2018,4/28/2019,2,478.8647800926,Dried Cherries,Yellow,Turquoise,true,false,24,31
+33,2/24/2018,10/30/2019,10,612.6571527778,Juice - Prune,Pink,Khaki,,,70,50
+34,10/16/2018,10/29/2019,4,378.4153009259,Grapes - Red,Puce,Aquamarine,false,false,84,49
+35,11/3/2018,11/1/2019,9,363.687650463,Mushroom - King Eryingii,Fuscia,Violet,,,3,100
+36,11/15/2018,6/8/2019,4,204.9520833333,Lobster - Cooked,Yellow,Aquamarine,,,6,87
+37,8/25/2018,6/5/2019,8,284.1789351852,Cornstarch,Crimson,Aquamarine,false,true,70,57
+38,3/4/2018,1/1/2019,10,302.2787152778,"Wine - White, Riesling, Semi - Dry",Goldenrod,Violet,true,false,5,100
+39,1/19/2018,1/31/2019,5,377.0734953704,Scallops - Live In Shell,Crimson,Fuscia,false,false,62,81
+40,7/1/2018,9/23/2019,4,448.3419328704,Sauce - Thousand Island,Fuscia,Red,true,true,23,1
+41,11/29/2017,9/20/2019,10,660.3573842593,Container Clear 8 Oz,Aquamarine,Yellow,false,false,94,70
+42,3/4/2018,3/19/2019,4,379.7695717593,"Lamb - Racks, Frenched",Violet,Indigo,,,66,5
+43,5/26/2018,6/25/2019,7,395.1848263889,Nut - Pumpkin Seeds,Goldenrod,Goldenrod,false,true,15,24
+44,11/17/2018,5/24/2019,4,188.4247800926,"Tray - Foam, Square 4 - S",Purple,Mauv,,,49,99
+45,2/27/2018,1/8/2019,8,315.1901157407,Tofu - Soft,Maroon,Khaki,false,false,69,47
+46,3/2/2018,3/23/2019,5,386.0482523148,Potatoes - Fingerling 4 Oz,Khaki,Indigo,true,false,70,55
+47,4/2/2018,12/30/2018,9,271.5861689815,Pork - Ham Hocks - Smoked,Red,Purple,,,21,44
+48,3/11/2018,12/13/2018,7,277.6399305556,Canadian Emmenthal,Aquamarine,Blue,true,true,70,68
+49,10/20/2018,2/4/2019,5,107.8105208333,Truffle Cups - Brown,Violet,Aquamarine,false,true,81,96
+50,3/14/2018,10/17/2019,8,582.0606712963,Bag Stand,Fuscia,Fuscia,false,true,75,14
+51,7/26/2018,2/24/2019,7,213.2992476852,Cream - 10%,Aquamarine,Maroon,,,12,80
+52,5/25/2018,11/11/2019,1,535.76125,Bread - French Baquette,Violet,Yellow,,,71,74
+53,12/12/2017,2/12/2019,4,426.841400463,"Vermouth - White, Cinzano",Crimson,Pink,false,true,5,40
+54,8/14/2018,2/11/2019,5,180.6064699074,"Lamb - Racks, Frenched",Teal,Indigo,false,false,74,71
+55,6/19/2018,3/7/2019,2,260.5253472222,Wine - Soave Folonari,Yellow,Pink,true,false,26,68
+56,11/14/2018,7/2/2019,3,230.5768634259,Squid - Tubes / Tenticles 10/20,Mauv,Purple,,,73,71
+57,3/13/2018,1/24/2019,7,317.4897800926,Wine - Peller Estates Late,Orange,Blue,,,20,91
+58,10/12/2018,9/25/2019,10,348.0075115741,Breakfast Quesadillas,Turquoise,Mauv,true,false,16,85
+59,5/28/2018,12/24/2018,6,209.7702777778,Pectin,Aquamarine,Red,true,false,60,50
+60,5/8/2018,2/3/2019,10,270.6119675926,Cheese - Cheddar With Claret,Orange,Purple,true,true,23,85
+61,5/5/2018,1/22/2019,5,262.3406597222,"Wine - Red, Black Opal Shiraz",Blue,Turquoise,true,false,26,10
+62,11/12/2018,1/30/2019,8,79.0677546296,Longos - Chicken Wings,Violet,Blue,false,false,23,63
+63,7/28/2018,6/9/2019,10,316.2567013889,Temperature Recording Station,Yellow,Turquoise,,,26,32
+64,9/28/2018,7/24/2019,5,298.5676388889,"Liners - Banana, Paper",Red,Red,,,14,20
+65,1/26/2018,11/10/2019,8,652.5637152778,Peas - Frozen,Crimson,Pink,false,false,25,17
+66,9/27/2018,3/3/2019,1,157.6879282407,Sardines,Indigo,Fuscia,,,69,37
+67,9/14/2018,9/20/2019,9,370.9758333333,Fenngreek Seed,Indigo,Green,,,82,28
+68,12/21/2017,9/1/2019,7,618.8695601852,Wine - Chateau Aqueria Tavel,Fuscia,Aquamarine,true,false,33,15
+69,7/26/2018,5/11/2019,5,289.6461111111,"Thyme - Lemon, Fresh",Turquoise,Pink,false,true,47,9
+70,3/30/2018,6/19/2019,1,445.4667939815,Nantucket - 518ml,Turquoise,Puce,true,false,89,57
+71,12/23/2017,6/21/2019,10,544.7064351852,Wine - Tio Pepe Sherry Fino,Maroon,Maroon,,,10,18
+72,4/9/2018,4/1/2019,10,356.8445486111,Cabbage Roll,Khaki,Goldenrod,true,true,56,17
+73,6/23/2018,1/16/2019,7,207.2915856481,Wine - Champagne Brut Veuve,Yellow,Yellow,false,true,62,4
+74,6/17/2018,4/18/2019,9,305.4376041667,Goat - Leg,Violet,Red,true,true,81,73
+75,8/15/2018,2/26/2019,8,194.5229050926,Jolt Cola - Red Eye,Maroon,Teal,,,34,98
+76,2/5/2018,1/15/2019,7,344.2606944444,"Nut - Walnut, Chopped",Yellow,Mauv,,,52,47
+77,6/14/2018,8/15/2019,10,427.3927314815,Allspice - Jamaican,Khaki,Mauv,true,false,16,8
+78,11/19/2018,11/15/2019,6,360.9534837963,Flavouring - Rum,Maroon,Purple,,,63,43
+79,1/8/2018,4/26/2019,4,473.6932986111,Tia Maria,Crimson,Violet,,,19,54
+80,8/11/2018,5/26/2019,2,288.2829513889,Mayonnaise,Goldenrod,Green,,,25,31
+81,1/7/2018,10/11/2019,7,641.6940277778,"Beans - Fava, Canned",Purple,Purple,false,false,33,54
+82,7/27/2018,6/10/2019,8,318.6492708333,Sobe - Cranberry Grapefruit,Maroon,Puce,,,42,83
+83,5/11/2018,4/13/2019,7,337.2540740741,"Wine - Red, Antinori Santa",Green,Aquamarine,false,true,3,33
+84,10/1/2018,2/9/2019,2,130.6218171296,Vinegar - Cider,Teal,Maroon,,,61,13
+85,10/16/2018,3/23/2019,10,158.1759953704,Onions - Green,Yellow,Green,false,false,18,49
+86,8/4/2018,3/9/2019,2,216.6022222222,Lamb - Loin Chops,Teal,Orange,false,false,20,99
+87,4/16/2018,8/21/2019,6,491.8826388889,Oil - Avocado,Indigo,Maroon,,,10,20
+88,5/26/2018,11/29/2018,3,186.8467939815,"Cup - 3.5oz, Foam",Mauv,Red,false,false,31,36
+89,12/7/2017,12/27/2018,10,385.4949768519,Bread - Sour Sticks With Onion,Orange,Maroon,,,24,53
+90,5/15/2018,2/10/2019,10,270.9013194444,"Tart Shells - Sweet, 3",Indigo,Goldenrod,,,23,43
+91,9/12/2018,5/29/2019,3,259.5294212963,Butter Ripple - Phillips,Blue,Blue,true,false,75,84
+92,8/2/2018,7/30/2019,9,362.154849537,Beans - Kidney White,Orange,Mauv,,,45,59
+93,5/23/2018,11/22/2019,5,548.5979513889,Chocolate - Semi Sweet,Yellow,Blue,true,true,58,38
+94,9/23/2018,6/20/2019,2,270.459849537,Wine - Sawmill Creek Autumn,Yellow,Turquoise,,,20,34
+95,3/3/2018,3/27/2019,3,389.2165625,"Lemonade - Natural, 591 Ml",Mauv,Mauv,false,false,54,92
+96,7/21/2018,3/5/2019,8,227.2675925926,Crab - Imitation Flakes,Indigo,Yellow,false,false,82,86
+97,3/4/2018,5/25/2019,5,446.9910300926,Stainless Steel Cleaner Vision,Indigo,Violet,true,false,68,4
+98,12/24/2017,4/27/2019,1,489.0200347222,Butter Balls Salted,Crimson,Orange,false,true,83,46
+99,7/18/2018,2/16/2019,10,213.6840046296,Ketchup - Tomato,Orange,Blue,false,true,25,5
+100,1/7/2018,6/20/2019,2,529.034525463,Bacon Strip Precooked,Red,Maroon,,,55,29
