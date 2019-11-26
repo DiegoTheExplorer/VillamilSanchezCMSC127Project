@@ -17,7 +17,7 @@ create table PROJECT(
 	pcodename VARCHAR(16),
 	cname VARCHAR(32) NOT NULL,
 	CONSTRAINT project_pid_pk PRIMARY KEY(pid),
-	CONSTRAINT project_cname_fk FOREIGN KEY(cname) REFERENCES COMPANY(cname)
+	CONSTRAINT project_cname_fk FOREIGN KEY(cname) REFERENCES COMPANY(cname) ON DELETE CASCADE
 );
 
 create table COMPANY_RECEIVES_PROJECT(
@@ -25,8 +25,8 @@ create table COMPANY_RECEIVES_PROJECT(
 	cname VARCHAR(32) NOT NULL,
 	startdate DATE,
 	enddate DATE,
-	CONSTRAINT company_receives_project_pid_pk FOREIGN KEY(pid) REFERENCES PROJECT(pid),
-	CONSTRAINT company_receives_project_cname_pk FOREIGN KEY(cname) REFERENCES COMPANY(cname)
+	CONSTRAINT company_receives_project_pid_pk FOREIGN KEY(pid) REFERENCES PROJECT(pid) ON DELETE CASCADE,
+	CONSTRAINT company_receives_project_cname_pk FOREIGN KEY(cname) REFERENCES COMPANY(cname) ON DELETE CASCADE
 );
 
 create table ADVISER(
@@ -35,7 +35,7 @@ create table ADVISER(
 	aname VARCHAR(32) NOT NULL,
 	pid VARCHAR(10) NOT NULL,
 	CONSTRAINT adviser_empno_pk PRIMARY KEY(empNo),
-	CONSTRAINT adviser_pid_fk FOREIGN KEY(Pid) REFERENCES PROJECT(pid)
+	CONSTRAINT adviser_pid_fk FOREIGN KEY(Pid) REFERENCES PROJECT(pid) ON DELETE CASCADE
 );
 
 create table ADVISER_SPECIALTIES(
@@ -43,7 +43,8 @@ create table ADVISER_SPECIALTIES(
 	aname VARCHAR(32) NOT NULL,
 	pid VARCHAR(10) NOT NULL,
 	specialty VARCHAR(40) NOT NULL,
-	CONSTRAINT adviser_specialties_pid_fk FOREIGN KEY(pid) REFERENCES PROJECT(pid)
+	CONSTRAINT adviser_specialties_pid_fk FOREIGN KEY(pid) REFERENCES PROJECT(pid) ON DELETE CASCADE,
+	CONSTRAINT adviser_specialties_empNo_fk FOREIGN KEY(empNo) REFERENCES ADVISER(empNo) ON DELETE CASCADE
 );
 
 create table STUDENT(
@@ -55,9 +56,9 @@ create table STUDENT(
 	cname VARCHAR(32) NOT NULL,
 	pid VARCHAR(10) NOT NULL,
 	CONSTRAINT student_snum_pk PRIMARY KEY(snum),
-	CONSTRAINT student_empno_fk FOREIGN KEY(empno) REFERENCES ADVISER(empno),
-	CONSTRAINT student_cname_fk FOREIGN KEY(cname) REFERENCES COMPANY(cname),
-	CONSTRAINT student_pid_fk FOREIGN KEY(pid) REFERENCES PROJECT(pid)
+	CONSTRAINT student_empno_fk FOREIGN KEY(empno) REFERENCES ADVISER(empno) ON DELETE CASCADE,
+	CONSTRAINT student_cname_fk FOREIGN KEY(cname) REFERENCES COMPANY(cname) ON DELETE CASCADE,
+	CONSTRAINT student_pid_fk FOREIGN KEY(pid) REFERENCES PROJECT(pid) ON DELETE CASCADE
 );
 
 create table TASK(
@@ -75,8 +76,8 @@ create table TASK(
 	dnum VARCHAR(10) NOT NULL,
 	snum VARCHAR(10) NOT NULL,
 	CONSTRAINT task_taskid_pk PRIMARY KEY(taskid),
-	CONSTRAINT task_pid_fk FOREIGN KEY(pid) REFERENCES PROJECT(pid),
-	CONSTRAINT task_snum_fk FOREIGN KEY(snum) REFERENCES STUDENT(snum)
+	CONSTRAINT task_pid_fk FOREIGN KEY(pid) REFERENCES PROJECT(pid) ON DELETE CASCADE,
+	CONSTRAINT task_snum_fk FOREIGN KEY(snum) REFERENCES STUDENT(snum) ON DELETE CASCADE
 );
 
 create table STUDENT_INTERNS_COMPANY(
@@ -85,14 +86,13 @@ create table STUDENT_INTERNS_COMPANY(
 	sem VARCHAR(7),
 	year YEAR,
 	salary INT(5),
-	CONSTRAINT student_interns_company_snum_pk FOREIGN KEY(snum) REFERENCES STUDENT(snum),
-	CONSTRAINT student_interns_company_cname_pk FOREIGN KEY(cname) REFERENCES COMPANY(cname)
+	CONSTRAINT student_interns_company_snum_fk FOREIGN KEY(snum) REFERENCES STUDENT(snum) ON DELETE CASCADE,
+	CONSTRAINT student_interns_company_cname_fk FOREIGN KEY(cname) REFERENCES COMPANY(cname) ON DELETE CASCADE
 );
 
 create table STUDENT_ASSIGNED_TASK (
 	snum VARCHAR(5) NOT NULL,
 	taskid VARCHAR(12) NOT NULL,
-	CONSTRAINT student_assigned_task_snum_pk FOREIGN KEY(snum) REFERENCES STUDENT(snum),
-	CONSTRAINT student_assigned_task_taskid_pk FOREIGN KEY(taskid) REFERENCES TASK(taskid)
-
+	CONSTRAINT student_assigned_task_snum_pk FOREIGN KEY(snum) REFERENCES STUDENT(snum) ON DELETE CASCADE,
+	CONSTRAINT student_assigned_task_taskid_pk FOREIGN KEY(taskid) REFERENCES TASK(taskid) ON DELETE CASCADE
 );
